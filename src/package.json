@@ -1,0 +1,19 @@
+{
+    "name": "javeld-web",
+    "description": "development environment for javeld.nl website",
+    "version": "0.1.0",
+    "devDependencies": {
+        "light-server": "^2.9.1"
+    },
+    "scripts": {
+        "dev": "light-server -c light-server.config.json"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/mjaveld/javeld.nl.git"
+    },
+    "keywords": [],
+    "author": "mjaveld",
+    "license": "GPL-3.0",
+    "homepage": "https://github.com/mjaveld/javeld.nl"
+  }
