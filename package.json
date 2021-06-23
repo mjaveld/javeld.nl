@@ -9,11 +9,16 @@
         "dev": "light-server -c light-server.config.json"
     },
     "repository": {
-      "type": "git",
-      "url": "https://github.com/mjaveld/javeld.nl.git"
+        "type": "git",
+        "url": "https://github.com/mjaveld/javeld.nl.git"
     },
     "keywords": [],
     "author": "mjaveld",
     "license": "GPL-3.0",
-    "homepage": "https://github.com/mjaveld/javeld.nl"
-  }
+    "homepage": "https://github.com/mjaveld/javeld.nl",
+    "dependencies": {
+        "autoprefixer": "^10.2.6",
+        "postcss": "^8.3.5",
+        "tailwindcss": "^2.2.2"
+    }
+}
