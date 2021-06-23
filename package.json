@@ -3,10 +3,14 @@
     "description": "development environment for javeld.nl website",
     "version": "0.1.0",
     "devDependencies": {
-        "light-server": "^2.9.1"
+        "autoprefixer": "^10.2.6",
+        "light-server": "^2.9.1",
+        "postcss": "^8.3.5",
+        "tailwindcss": "^2.2.2"
     },
     "scripts": {
-        "dev": "light-server -c light-server.config.json"
+        "dev": "light-server -c light-server.config.json",
+        "css": "npx tailwindcss -i ./public/src/css/styles.css -o ./public/dist/css/styles.css"
     },
     "repository": {
         "type": "git",
@@ -15,10 +19,5 @@
     "keywords": [],
     "author": "mjaveld",
     "license": "GPL-3.0",
-    "homepage": "https://github.com/mjaveld/javeld.nl",
-    "dependencies": {
-        "autoprefixer": "^10.2.6",
-        "postcss": "^8.3.5",
-        "tailwindcss": "^2.2.2"
-    }
+    "homepage": "https://github.com/mjaveld/javeld.nl"
 }
