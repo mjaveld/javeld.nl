@@ -3,7 +3,7 @@
     "port": 8888,
     "historyindex": "/index.html",
     "watchexps": [
-        "public/src/css/*.css # npm run css # reloadcss",
-        "public/**"
+        "public/index.html",
+        "public/dist/**"
     ]
 }

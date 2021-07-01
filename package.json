@@ -5,12 +5,14 @@
     "devDependencies": {
         "autoprefixer": "^10.2.6",
         "light-server": "^2.9.1",
+        "npm-run-all": "^4.1.5",
         "postcss": "^8.3.5",
-        "tailwindcss": "^2.2.2"
+        "tailwindcss": "^2.2.4"
     },
     "scripts": {
-        "dev": "light-server -c light-server.config.json",
-        "css": "npx tailwindcss -i ./public/src/css/styles.css -o ./public/dist/css/styles.css"
+        "dev": "run-p css serve",
+        "serve": "light-server -c light-server.config.json",
+        "css": "TAILWIND_MODE=watch npx tailwindcss -o ./public/dist/css/styles.css --watch"
     },
     "repository": {
         "type": "git",
